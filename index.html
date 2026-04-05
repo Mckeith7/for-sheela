@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Mary 🚗✨</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="intro-overlay" id="intro-screen">
+        <div class="audi-reveal">
+            <img src="audi_intro.jpg" alt="Audi RS7" class="audi-car">
+            <h1 class="audi-text">The Journey...</h1>
+            <button id="start-btn" class="magical-btn">Click to Begin ✨</button>
+        </div>
+    </div>
+
+    <div class="main-content" id="main-content" style="display: none;">
+        <video autoplay muted loop id="bg-video">
+            <source src="mary_spin.mp4" type="video/mp4">
+        </video>
+        <div class="overlay"></div>
+        <div class="content-wrapper">
+            <div class="image-gallery">
+                <img src="mary1.jpg" id="mary-slideshow">
+            </div>
+            <div class="note-section">
+                <h1 class="main-title">Happy Birthday, Mary! 🎂👑</h1>
+                <p id="typing-text"></p>
+            </div>
+        </div>
+        <div id="emoji-container"></div>
+    </div>
+
+    <audio id="bday-music" loop>
+        <source src="birthday_song.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
