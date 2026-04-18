@@ -3,39 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>For Mary 🚗✨</title>
+    <title>For Sheela ✨</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="intro-overlay" id="intro-screen">
-        <div class="audi-reveal">
-            <img src="audi_intro.jpg" alt="Audi RS7" class="audi-car">
-            <h1 class="audi-text">The Journey...</h1>
-            <button id="start-btn" class="magical-btn">Click to Begin ✨</button>
+    <video autoplay muted loop id="bg-video">
+        <source src="mary_spin.mp4" type="video/mp4">
+    </video>
+
+    <div class="container">
+        <div id="intro-screen">
+            <img src="audi_intro.jpg" alt="Sleek Intro" class="intro-img">
+            <h1 class="fade-in">Something Sleek...</h1>
+            <button onclick="startExperience()" id="start-btn">Begin</button>
+        </div>
+
+        <div id="main-content" class="hidden">
+            <h1 class="birthday-title">Happy Birthday, Sheela 🎂</h1>
+            
+            <div class="photo-frame">
+                <img src="mary1.jpg" alt="Sheela" class="profile-img">
+            </div>
+
+            <div class="letter-box">
+                <p>Honestly, I was deep in my terminal today, playing around with some new code and refining a few 'Assets'... but for some reason, the logic kept leading back to you.</p>
+                <p>I guess I accidentally scripted something that reminded me of you today. It’s sleek, a bit mysterious, and definitely has that 'birthday energy.' 😉</p>
+                <p>I’m not one for the typical long paragraphs, so I built this portal instead. They say code is permanent, so consider this a digital mark of a vibe I haven’t been able to clear from my cache.</p>
+                <p><strong>Click around... see if you can handle the energy. ✨</strong></p>
+            </div>
+            
+            <audio id="bg-music" loop>
+                <source src="birthday_song.mp3" type="audio/mp3">
+            </audio>
         </div>
     </div>
-
-    <div class="main-content" id="main-content" style="display: none;">
-        <video autoplay muted loop id="bg-video">
-            <source src="mary_spin.mp4" type="video/mp4">
-        </video>
-        <div class="overlay"></div>
-        <div class="content-wrapper">
-            <div class="image-gallery">
-                <img src="mary1.jpg" id="mary-slideshow">
-            </div>
-            <div class="note-section">
-                <h1 class="main-title">Happy Birthday, Mary! 🎂👑</h1>
-                <p id="typing-text"></p>
-            </div>
-        </div>
-        <div id="emoji-container"></div>
-    </div>
-
-    <audio id="bday-music" loop>
-        <source src="birthday_song.mp3" type="audio/mpeg">
-    </audio>
-
     <script src="script.js"></script>
 </body>
 </html>
