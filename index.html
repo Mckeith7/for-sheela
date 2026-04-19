@@ -2,19 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>For Sheela ✨</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <video autoplay muted loop id="bg-video">
+    <video autoplay muted loop playsinline id="bg-video">
         <source src="mary_spin.mp4" type="video/mp4">
     </video>
 
     <div class="container">
         <div id="intro-screen">
             <div class="img-wrapper">
-                <img src="audi_intro.jpg" alt="Sleek" class="intro-img">
+                <img src="audi_intro.jpg" alt="Sleek Intro" class="intro-img">
             </div>
             <h1 class="fade-in">Something Sleek...</h1>
             <button onclick="startExperience()" id="start-btn">Begin</button>
@@ -28,14 +28,15 @@
             <div class="letter-box">
                 <p>Honestly, I was deep in my terminal today, playing around with some new code... but the logic kept leading back to you.</p>
                 <p>I accidentally scripted something that reminded me of you today. Sleek, mysterious, and definitely has that 'birthday energy.' 😉</p>
-                <p>They say code is permanent, so consider this a digital mark of a vibe I haven’t been able to clear from my cache.</p>
-                <p><strong>Click around... see if you can handle the energy. ✨</strong></p>
+                <p>Consider this a digital mark of a vibe I haven’t been able to clear from my cache.</p>
+                <p><strong>Check the vibes... ✨</strong></p>
             </div>
-            <audio id="bg-music" loop>
-                <source src="birthday_song.mp3" type="audio/mp3">
-            </audio>
         </div>
     </div>
+
+    <audio id="bg-music" loop>
+        <source src="birthday_song.mp3" type="audio/mp3">
+    </audio>
 
     <script src="script.js"></script>
 </body>
