@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>For Sheela ✨</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -14,18 +14,15 @@
     <div class="container">
         <div id="intro-screen">
             <img src="audi_intro.jpg" class="intro-img">
-            <h1>Something Sleek...</h1>
+            <h1 class="fade-in">Something Sleek...</h1>
             <button onclick="startExperience()" id="start-btn">Begin</button>
         </div>
 
         <div id="main-content" style="display:none;">
             <h1 class="birthday-title">Happy Birthday, Sheela 🎂</h1>
             
-            <div class="image-grid">
-                <img src="mary1.jpg" class="grid-pic">
-                <img src="mary2.jpg" class="grid-pic">
-                <img src="mary3.jpg" class="grid-pic">
-                <img src="mary4.jpg" class="grid-pic">
+            <div class="photo-frame">
+                <img src="mary1.jpg" id="slideshow" class="profile-img">
             </div>
 
             <div class="letter-box">
